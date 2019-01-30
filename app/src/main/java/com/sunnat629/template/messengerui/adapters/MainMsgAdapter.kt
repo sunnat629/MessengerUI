@@ -49,7 +49,7 @@ return mainMsgModelList.size
         val lastMsg = view.findViewById(R.id.lastMsg) as TextView
         val dateTime = view.findViewById(R.id.dateTime) as TextView
 
-        val proPic = view.findViewById(R.id.proPic) as CircleImageView
+//        val proPic = view.findViewById(R.id.proPic) as CircleImageView
 //        val isOnline = view.findViewById(R.id.isOnline) as CircleImageView
 
     }
