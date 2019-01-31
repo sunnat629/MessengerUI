@@ -6,11 +6,17 @@ import android.support.v4.app.Fragment
 import android.support.v7.app.AppCompatActivity
 import com.sunnat629.template.messengerui.home.HomeFragment
 import kotlinx.android.synthetic.main.activity_main.*
+import android.R.attr.src
+import android.graphics.BitmapFactory
+import android.support.v4.graphics.drawable.RoundedBitmapDrawableFactory
+import android.support.v4.graphics.drawable.RoundedBitmapDrawable
+import com.sunnat629.template.messengerui.home.DiscoverFragment
+
 
 class MainActivity : AppCompatActivity() {
 
-    private val homeFragment = HomeFragment.newInstance(this)
-    private val groupFragment = GroupFragment()
+    private val homeFragment = DiscoverFragment()
+    private val groupFragment = HomeFragment.newInstance(this)
     private val cameraFragment = CameraFragment()
     private val gameFragment = GameFragment()
     private val othersFragment = OthersFragment()
@@ -57,8 +63,7 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
-
-        fm.beginTransaction().add(R.id.main_container, homeFragment, "1").commit()
+         fm.beginTransaction().add(R.id.main_container, homeFragment, "1").commit()
         fm.beginTransaction().add(R.id.main_container, groupFragment, "2").hide(groupFragment).commit()
         fm.beginTransaction().add(R.id.main_container, cameraFragment, "3").hide(cameraFragment).commit()
         fm.beginTransaction().add(R.id.main_container, gameFragment, "4").hide(gameFragment).commit()

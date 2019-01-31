@@ -121,4 +121,18 @@
     <string name="tab_group">Group</string>
     <string name="tab_call">Calls</string>
     <string name="search">Search</string>
+
+    <string name="replies_time">Typically replies within a day</string>
+    <string name="description">This provides you some awesome features and you will love it.</string>
+    <string name="automated">Automated messaging</string>
+
+    <string name="title_recent">Recent</string>
+    <string name="title_featured">Featured</string>
+    <string name="title_see_more">See More</string>
+    <string name="title_popular">Popular</string>
+    <string name="big_title_chat">Chats</string>
+    <string name="big_title_people">People</string>
+    <string name="big_title_discover">Discover</string>
+    <string name="title_business">Businesses</string>
+    <string name="title_games">Games</string>
 </resources>
